@@ -1,6 +1,7 @@
 <h1>ik zit dagelijk te facebooken. Face.</h1>
 
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +15,7 @@
     <header>
         <nav>
             <div>
-                
+
             </div>
         </nav>
     </header>
