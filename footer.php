@@ -1,6 +1,4 @@
-<?php
-include "Css/style.css";
-?>
+
 
     <!--  Start footer -->
     <footer>
