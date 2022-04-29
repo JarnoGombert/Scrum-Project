@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+<?php
+<h1>ik zit dagelijk te facebooken. Face.</h1>
+?>
+=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,3 +18,4 @@
     ?>
 </body>
 </html>
+>>>>>>> 16a1baeb9c7832b7dda160cf54e1d299e120f3e8
