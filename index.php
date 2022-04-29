@@ -13,7 +13,7 @@
 </head>
 <body>
     <?php
-
+        $een = 1;
     ?>
 </body>
 </html>
