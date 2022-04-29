@@ -10,5 +10,12 @@
     <?php
         $een = 1;
     ?>
+    <header>
+        <nav>
+            <div>
+                
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
