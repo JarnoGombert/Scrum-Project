@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="Css/style.css">
 </head>
 <body>
-    <?php
-    include 'header.php';
-        $een = 1;
-    ?>
-
+<header>
+    <nav>
+        <div class="container">
+            <a href="index.php">Home</a>
+        </div>
+    </nav>
+</header>
 </body>
 </html>
