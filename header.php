@@ -10,9 +10,12 @@
 <body>
 <header>
     <nav>
-        <div class="container">
-            <a href="index.php">Home</a>
-        </div>
+            <img src="Image/Gereedschap.png" alt="">
+        <ul>
+            <div class="container">
+                <a href="index.php">Home</a>
+            </div>
+        </ul>
     </nav>
 </header>
 </body>
