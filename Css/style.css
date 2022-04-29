@@ -4,6 +4,11 @@
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+/* .container{
+ justify-content: center;
+ margin: 40px;
+} */
+/* Header */
 header{
     height: 150px;
     width: 100%;
@@ -15,11 +20,6 @@ display: flex;
 header ul{
 display: flex;
 }
-.container{
- justify-content: center;
- margin: 40px;
-
-}
 header nav a{
     text-decoration: none;
     color: black;
@@ -29,11 +29,7 @@ header nav a{
     height: 75px;
     margin: 40px;
 }
-.container{
- justify-content: center;
- margin: 40px;
-
-}
+/* end header */
 /*footer*/
 footer{
     background-color: gray;

@@ -1,5 +1,3 @@
-<h1>ik zit dagelijk te facebooken. Face.</h1>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +9,11 @@
 <body>
 <header>
     <nav>
-            <img src="Image/Gereedschap.png" alt="">
+        <h1><img src="Image/Gereedschap.png" alt="Logo"><a href="index.php">Naam van het bedrijf</a></h1>
         <ul>
-                <a href="index.php">Home</a>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
         </ul>
     </nav>
 </header>
