@@ -9,6 +9,7 @@ body{
  margin: 40px;
 } */
 section{
+    width: 100%;
     margin-top: 100px;
     margin-bottom: 100px;
 }
@@ -82,8 +83,14 @@ footer .container .column li a{
 /*end footer*/
 /* inlog */
 .page{
+    width: 1510px;
+    justify-content: center;
     text-align: center;
+    align-items: center;
 }
 .inloggen{
+    margin-top: 10px;
+    width: 1510px;
+    justify-content: center;
     display: block;
 }
