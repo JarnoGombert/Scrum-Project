@@ -14,6 +14,10 @@
         <ul>
             <div class="container">
                 <a href="index.php">Home</a>
+                <a href="index.php">Home</a>
+                <a href="index.php">Home</a>
+                <a href="index.php">Home</a>
+
             </div>
         </ul>
     </nav>
