@@ -30,18 +30,19 @@ $user = null;
         </div>    
         <div class="inloggen">
             <form action="#" method="POST">
-                <div style="display: flex; justify-content: center; margin-right: 20px">
-                    <label for="">E-mail</label>
-                    <input name="email" id="input" type="email" required>
-                </div>
-                <div style="padding-top: 5px; display: flex; justify-content: center;">
-                    <label for="">Wachtwoord</label>
-                    <input name="wachtwoord" class="input" id="Inputt" type="password" required>
-                    <input type="checkbox" name="Inputt" onclick="myFunction()">
-                </div>
-                <div style="padding-top: 10px; display: flex; justify-content: center; margin-left: 120px;">
-                    <input id="input" name="login" type="submit" value="Login">
-                </div>
+                <table>
+                    <tr>
+                        <td><label for="">E-mail</label></td>
+                        <td><input name="email" id="input" type="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Wachtwoord</label></td>
+                        <td><input name="wachtwoord" class="input" id="Inputt" type="password" required> <input type="checkbox" name="Inputt" onclick="myFunction()"></td>
+                    </tr>
+                    <tr>
+                        <td><input id="input" name="login" type="submit" value="Login"></td>
+                    </tr>
+                </table>
             </form>
         </div>
     </div>
