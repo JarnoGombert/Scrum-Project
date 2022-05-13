@@ -7,6 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+<?php
+include "header.php";
+?>
 <div class="page">
     <div class="home">
         <h1><a style="text-decoration: none; color: black;" href="#">Beheer</a></h1> 
@@ -28,6 +31,9 @@
             </div>
         </form>
     </div>
+<?php
+include "footer.php";
+?>   
 <script>
     // Dit is voor het wachtwoord checken met een checkbox
 function myFunction() {
@@ -41,3 +47,7 @@ function myFunction() {
 </script>
 </body>
 </html>
+
+
+
+
