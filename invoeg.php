@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    
+<?php
+include "header.php";
+include "db_functions.php";
+?>
+
+<?php
+include "footer.php";
+?>
 </body>
 </html>

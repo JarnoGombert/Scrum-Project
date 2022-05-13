@@ -10,12 +10,14 @@
 <body>
 <?php
 include "header.php";
+include "db_functions.php";
 $user = null;
     if (isset($_POST['login']))
     {
         $user = getUser($_POST['email'], $_POST['wachtwoord']);
         // hier wordt de eigenaar gecheckt of hij toestemming heeft tot alle bestemmingen
         if($user != 'No user found') {
+            echo "hoi";
             // en dan wordt hij doorgestuurd naar de resultaten
             header("Location: ./invoeg.php");
             exit;
