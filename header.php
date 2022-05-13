@@ -11,7 +11,7 @@
     <nav>
         <h1><img src="Image/Gereedschap.png" alt="Logo"><a href="index.php"></a></h1>
              <li>
-                 bedrijfsnaam
+                 Harry B.V.
             </li>
         <ul>
             <div class="container">

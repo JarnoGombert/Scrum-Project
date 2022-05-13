@@ -8,10 +8,15 @@ body{
  justify-content: center;
  margin: 40px;
 } */
+section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 /* Header */
 header{
     height: 120px;
     width: 100%;
+    border-bottom: solid 2px black;
 }
 header nav{
 display: flex;
@@ -42,6 +47,7 @@ header nav li{
 /* end header */
 /*footer*/
 footer{
+    background-color: rgb(104, 156, 156);
     width: 100%;
     color: #fff;
     padding: 60px 0;
@@ -74,3 +80,10 @@ footer .container .column li a{
     margin: 10px 0;
 }
 /*end footer*/
+/* inlog */
+.page{
+    text-align: center;
+}
+.inloggen{
+    display: block;
+}
