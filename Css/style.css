@@ -49,7 +49,7 @@ header nav li{
 footer{
     background-color: rgb(104, 156, 156);
     width: 100%;
-    color: #fff;
+    color: black;
     padding: 60px 0;
 }
 hr{
@@ -59,10 +59,13 @@ hr{
 footer .container{
     display: flex;
     align-content: center;
+    border-top: solid 2px black;
+
 }
 
 footer .container .column{
     margin-right: 120px;
+    margin-left: 200px;
 }
 
 footer .container .column p{
@@ -75,7 +78,7 @@ footer .container .column ul{
 }
 
 footer .container .column li a{
-    color: #fff;
+    color: black;
     text-decoration: none;
     margin: 10px 0;
 }
