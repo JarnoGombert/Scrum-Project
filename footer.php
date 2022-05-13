@@ -2,6 +2,7 @@
 
     <!--  Start footer -->
     <footer>
+        <hr>
         <div class="container">
             <div class="column column1">
             <!-- gegevens voor contact -->

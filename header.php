@@ -10,9 +10,9 @@
 <header>
     <nav>
         <h1><img src="Image/Gereedschap.png" alt="Logo"><a href="index.php"></a></h1>
-        <div>
-            bedrijf
-        </div>
+             <li>
+                 bedrijfsnaam
+            </li>
         <ul>
             <div class="container">
                 <a href="index.php">Home</a>
