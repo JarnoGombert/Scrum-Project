@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Css/style.css">
 </head>
 <body>
 <header>
     <nav>
-            <img src="Image/Gereedschap.png" alt="">
+        <h1><img src="Image/Gereedschap.png" alt="Logo"><a href="index.php"></a></h1>
+        <div>
+            bedrijf
+        </div>
         <ul>
             <div class="container">
                 <a href="index.php">Home</a>
@@ -22,5 +24,3 @@
         </ul>
     </nav>
 </header>
-</body>
-</html>

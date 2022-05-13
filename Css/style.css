@@ -4,6 +4,11 @@
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+/* .container{
+ justify-content: center;
+ margin: 40px;
+} */
+/* Header */
 header{
     height: 100px;
     width: 100%;
@@ -13,11 +18,6 @@ display: flex;
 }
 header ul{
 display: flex;
-}
-.container{
- justify-content: center;
- margin: 40px;
-
 }
 header nav a{
     text-decoration: none;
@@ -29,3 +29,36 @@ header nav a{
     height: 75px;
     margin: 40px;
 }
+/* end header */
+/*footer*/
+footer{
+    background-color: gray;
+    width: 100%;
+    color: #fff;
+    padding: 60px 0;
+}
+
+footer .container{
+    display: flex;
+    align-content: center;
+}
+
+footer .container .column{
+    margin-right: 120px;
+}
+
+footer .container .column p{
+    margin: 10px 0;
+}
+
+footer .container .column ul{
+    padding: 0;
+    list-style: none;
+}
+
+footer .container .column li a{
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+}
+/*end footer*/

@@ -1,39 +1,5 @@
 
-<style>
-    /* Footer */
 
-footer{
-    background-color: gray;
-    width: 100%;
-    color: #fff;
-    padding: 60px 0px;
-}
-
-footer .container{
-    display: flex;
-    align-content: center;
-}
-
-footer .container .column{
-    margin-right: 120px;
-}
-
-footer .container .column p{
-    margin: 10px 0px;
-}
-
-footer .container .column ul{
-    padding: 0px;
-    list-style: none;
-}
-
-footer .container .column li a{
-    color: #fff;
-    text-decoration: none;
-    margin: 10px 0px;
-}
-
-</style>
     <!--  Start footer -->
     <footer>
         <div class="container">
