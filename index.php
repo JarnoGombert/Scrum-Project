@@ -42,6 +42,7 @@ $user = null;
                         <td><input name="wachtwoord" class="input" id="Inputt" type="password" required> <input type="checkbox" name="Inputt" onclick="myFunction()"></td>
                     </tr>
                     <tr>
+                        <td></td>
                         <td><input id="input" name="login" type="submit" value="Login"></td>
                     </tr>
                 </table>
