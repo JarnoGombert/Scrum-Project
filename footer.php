@@ -19,8 +19,8 @@
                     <li><a href="https://youtu.be/dQw4w9WgXcQ">Youtube</a></li>
                 </ul>
             </div>
-        </div>
-    </footer>
+        </footer>
+
     
     <!--  End footer -->
     </body>
