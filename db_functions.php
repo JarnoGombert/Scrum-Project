@@ -33,10 +33,11 @@ function db_insertData($query)
 
 function getUser($email,$password)
 {
-    $user = db_getData("SELECT * FROM beheerder WHERE 'E-mail' = '$email' AND 'Wachtwoord' = '$password'");
+    $user = db_getData("SELECT * FROM `beheerder` WHERE `Email` = '$email' AND `Wachtwoord` = '$password'");
     //PDO: rowCount
-    if (mysqli_num_rows($user) > 0 )
+    if ($user->num_rows >0)
     {
+        header("Location: ./invoeg.php");
         // User found, return user data
         return $user;
     }
