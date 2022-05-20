@@ -2,13 +2,15 @@
 
     <!--  Start footer -->
         <footer>
-            <div hier bepaalde width in en dan de andere 2 divs display: space-evenly>
+            <div  class="footer_indeling">
                 <div class="column column1">
                 <!-- gegevens voor contact -->
                     <h3>Contact</h3>
-                    <p>Adres: Walstraat 1, 7061 CA Terborg</p>
-                    <p>Telefoon: 0315 632 042</p>
-                    <p>Email: Harrybv@gmail.nl</p>
+                        <div style="width: 1000%;">
+                             <p>Adres: Walstraat 1, 7061 CA Terborg</p>
+                            <p>Telefoon: 0315 632 042</p>
+                            <p>Email: Harrybv@gmail.nl</p>
+                        </div>
                 </div>
                 <div class="column column2">
                     <h3>Links</h3>
