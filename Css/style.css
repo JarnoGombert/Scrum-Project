@@ -57,27 +57,27 @@ hr{
     color: black;
 }
 
-.container{
+footer{
     background-color: rgb(104, 156, 156);
     display: flex;
     align-content: center;
 }
 
-.container .column{
+footer .column{
     margin-right: 120px;
     margin-left: 200px;
 }
 
-.container .column p{
+footer .column p{
     margin: 10px 0;
 }
 
-.container .column ul{
+footer .column ul{
     padding: 0;
     list-style: none;
 }
 
-.container .column li a{
+footer .column li a{
     color: black;
     text-decoration: none;
     margin: 10px 0;
@@ -91,7 +91,6 @@ hr{
     align-items: center;
 }
 .inloggen{
-    margin-left: 600px;
     margin-top: 10px;
     width: 100%;
     justify-content: center;
