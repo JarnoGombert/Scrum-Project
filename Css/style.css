@@ -1,6 +1,3 @@
-* {
-    background-color: rgb(104, 156, 156);
-}
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -18,6 +15,8 @@ header{
     height: 120px;
     width: 100%;
     border-bottom: solid 2px black;
+    background-color: rgb(104, 156, 156);
+
 }
 header nav{
 display: flex;
@@ -47,38 +46,40 @@ header nav li{
 }
 /* end header */
 /*footer*/
-footer{
+/* {
     background-color: rgb(104, 156, 156);
     width: 100%;
     color: black;
     padding: 60px 0;
-}
+    height: 150px;
+} */
 hr{
     color: black;
 }
 
-footer .container{
+.container{
+    background-color: rgb(104, 156, 156);
     display: flex;
     align-content: center;
     border-top: solid 2px black;
 
 }
 
-footer .container .column{
+.container .column{
     margin-right: 120px;
     margin-left: 200px;
 }
 
-footer .container .column p{
+.container .column p{
     margin: 10px 0;
 }
 
-footer .container .column ul{
+.container .column ul{
     padding: 0;
     list-style: none;
 }
 
-footer .container .column li a{
+.container .column li a{
     color: black;
     text-decoration: none;
     margin: 10px 0;

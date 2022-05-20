@@ -1,8 +1,7 @@
 
 
     <!--  Start footer -->
-    <footer>
-        <div class="container">
+           <div class="container">
             <div class="column column1">
             <!-- gegevens voor contact -->
                 <h3>Contact</h3>
@@ -22,7 +21,7 @@
             </div>
         </div>
 
-    </footer>
+    
     <!--  End footer -->
     </body>
 </html>
