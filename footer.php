@@ -1,8 +1,8 @@
 
 
     <!--  Start footer -->
-           <div class="container">
-            <div class="column column1">
+    <footer>
+        <div class="column column1">
             <!-- gegevens voor contact -->
                 <h3>Contact</h3>
                 <p>Adres: Walstraat 1, 7061 CA Terborg</p>
@@ -20,7 +20,7 @@
                 </ul>
             </div>
         </div>
-
+    </footer>
     
     <!--  End footer -->
     </body>
