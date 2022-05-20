@@ -1,7 +1,7 @@
 
 
     <!--  Start footer -->
-           <div class="container">
+        <footer class="container">
             <div class="column column1">
             <!-- gegevens voor contact -->
                 <h3>Contact</h3>
@@ -19,7 +19,7 @@
                     <li><a href="https://youtu.be/dQw4w9WgXcQ">Youtube</a></li>
                 </ul>
             </div>
-        </div>
+        </footer>
 
     
     <!--  End footer -->
