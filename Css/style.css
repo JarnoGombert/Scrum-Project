@@ -23,13 +23,12 @@ display: flex;
 }
 header ul{
 display: flex;
-margin-top: 40px;
 font-size: 18px;
 }
 header nav a{
     text-decoration: none;
     color: black;
-    margin: 45px;
+    margin: 40  px;
 }
 header nav li{
     text-decoration: none;
@@ -61,8 +60,6 @@ hr{
     background-color: rgb(104, 156, 156);
     display: flex;
     align-content: center;
-    border-top: solid 2px black;
-
 }
 
 .container .column{
@@ -87,7 +84,7 @@ hr{
 /*end footer*/
 /* inlog */
 .page{
-    width: 1510px;
+    width: 100%;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -95,7 +92,7 @@ hr{
 .inloggen{
     margin-left: 600px;
     margin-top: 10px;
-    width: 1510px;
+    width: 100%;
     justify-content: center;
     display: block;
 }
