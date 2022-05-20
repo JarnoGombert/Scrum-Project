@@ -1,5 +1,5 @@
 <?php
-
+include '../database.php'
 class User
 {
     public $id;
@@ -11,7 +11,7 @@ class User
 
     function __construct()
     {
-        $this->db = new mysqli('localhost', 'root', '', 'gertdatabase');
+        $this->db = new mysqli('DB_HOST', 'DB_USER', '', 'DB_NAME');
     }
 
     public function getUser($id){
