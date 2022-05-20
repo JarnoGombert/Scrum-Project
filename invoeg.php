@@ -11,7 +11,9 @@
 include "header.php";
 include "db_functions.php";
 ?>
-<a href="#">FaceFace</a>
+<?php
+
+?>
 <?php
 include "footer.php";
 ?>
