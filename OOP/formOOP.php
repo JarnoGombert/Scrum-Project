@@ -37,7 +37,7 @@ if (isset($_GET['edit'])) {
 $db = new mysqli('localhost', 'root', '', 'gc_festival');
 $results = $db->query("SELECT * FROM users");
 ?>
-<div class="content">
+<!-- <div class="content">
     <table>
         <thead>
         <tr>
@@ -88,7 +88,7 @@ $results = $db->query("SELECT * FROM users");
             <?php endif ?>
         </div>
     </form>
-</div>
+</div> -->
 
 </body>
 </html>
