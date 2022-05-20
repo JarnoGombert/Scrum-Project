@@ -22,13 +22,14 @@ header nav{
 display: flex;
 }
 header ul{
-display: flex;
-font-size: 18px;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    gap: 15px;
 }
 header nav a{
     text-decoration: none;
     color: black;
-    margin: 40  px;
 }
 header nav li{
     text-decoration: none;
