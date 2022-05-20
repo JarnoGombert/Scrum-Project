@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/style.css">
-    <title>Document</title>
-</head>
-<body>
+
 <?php
 include "header.php";
 include "db_functions.php";
@@ -16,12 +7,26 @@ $user = null;
     {
         $user = getUser($_POST['email'], $_POST['wachtwoord']);
         // hier wordt de eigenaar gecheckt of hij toestemming heeft tot alle bestemmingen
+        console_log($_POST['email'] . $_POST['wachtwoord']);
+        console_log($user);
         if($user != 'No user found') {
+            console_log($user . "69");
             // en dan wordt hij doorgestuurd naar de resultaten
             header("Location: ./invoeg.php");
             exit;
         }
     }
+
+
+//scuffed php version of console.log
+function console_log($output, $with_script_tags = true) {
+    $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) .
+        ');';
+    if ($with_script_tags) {
+        $js_code = '<script>' . $js_code . '</script>';
+    }
+    echo $js_code;
+}
 ?>
 <section>
     <div class="page">
@@ -34,7 +39,7 @@ $user = null;
                 <table>
                     <tr>
                         <td><label for="">E-mail</label></td>
-                        <td><input name="email" id="input" type="email" required></td>
+                        <td><input name="email" type="email" required></td>
                     </tr>
                     <tr>
                         <td><label for="">Wachtwoord</label></td>
@@ -42,7 +47,7 @@ $user = null;
                     </tr>
                     <tr>
                         <td></td>
-                        <td><input id="input" name="login" type="submit" value="Login"></td>
+                        <td><input name="login" type="submit" value="Login"></td>
                     </tr>
                 </table>
             </form>
