@@ -37,7 +37,7 @@ function getUser($email,$password)
     //PDO: rowCount
     if ($user->num_rows >0)
     {
-        header("Location: ./invoeg.php");
+
         // User found, return user data
         return $user;
     }

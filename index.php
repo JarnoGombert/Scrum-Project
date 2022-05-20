@@ -7,10 +7,9 @@ $user = null;
     {
         $user = getUser($_POST['email'], $_POST['wachtwoord']);
         // hier wordt de eigenaar gecheckt of hij toestemming heeft tot alle bestemmingen
-        console_log($_POST['email'] . $_POST['wachtwoord']);
-        console_log($user);
+
         if($user != 'No user found') {
-            console_log($user . "69");
+
             // en dan wordt hij doorgestuurd naar de resultaten
             header("Location: ./invoeg.php");
             exit;
