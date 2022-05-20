@@ -65,7 +65,11 @@ footer{
     height: 100%;
     align-content: center;
 }
-
+footer .footer_indeling{
+    width: 50%;
+    justify-content: space-evenly;
+    display: flex;
+}
 footer .column{
     margin-right: 120px;
     margin-left: 200px;
