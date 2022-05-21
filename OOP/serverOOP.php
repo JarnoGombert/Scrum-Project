@@ -1,5 +1,5 @@
 <?php
-include 'models/User.php';
+include 'User.php';
 
 session_start();
 
@@ -21,7 +21,7 @@ if (isset($_POST['save'])) {
 
     $_SESSION['message'] = $newCustomer->save();
 
-    header('location: indexOOP.php');
+    header('location: ../invoeg.php');
 }
 
 if (isset($_POST['update'])) {
@@ -35,7 +35,7 @@ if (isset($_POST['update'])) {
     $user->password = $_POST['password'];
 
     $_SESSION['message'] = $user->update();
-    header('location: indexOOP.php');
+    header('location: ../invoeg.php');
 }
 
 if (isset($_GET['del'])) {
@@ -45,5 +45,5 @@ if (isset($_GET['del'])) {
     $user = $user->getUser($id);
 
     $_SESSION['message'] = $user->delete();
-    header('location: indexOOP.php');
+    header('location: ../invoeg.php');
 }

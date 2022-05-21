@@ -9,6 +9,9 @@
     <title>Document</title>
 </head>
 <body>
+<?php
+include "db_functions.php";
+?>
 <header>
     <nav>
         <h1><img src="Image/Gereedschap.png" alt="Logo"><a href="index.php"></a></h1>
