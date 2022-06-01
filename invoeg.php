@@ -58,7 +58,7 @@ $results = $db->query("SELECT * FROM klant");
         </thead>
 
         <?php while ($row = $results->fetch_assoc()) { ?>
-            <tr>
+            <tr class="tabel">
                 <td><?php echo $row['VoorNaam']; ?></td>
                 <td><?php echo $row['AchterNaam']; ?></td>
                 <td><?php echo $row['Email']; ?></td>
