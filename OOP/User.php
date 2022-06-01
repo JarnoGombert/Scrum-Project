@@ -1,5 +1,5 @@
 <?php
-include '../database.php';
+//include '../db_functions.php';
 class User
 {
     public $id;
@@ -17,11 +17,18 @@ class User
 
     function __construct()
     {
-        $this->db = new mysqli('DB_HOST', 'DB_USER', '', 'DB_NAME');
+        $this->db = new mysqli('localhost', 'root', '', 'gertdatabase');
     }
-
+//    function db_getData($query)
+//    {
+//        $mysqli = $this->db;
+//        $result = $mysqli->query($query);
+//        $mysqli->close();
+//        return $result;
+//    }
     public function getUser($id){
         $user = $this->db->query("SELECT * FROM users WHERE id = " . $id);
+
         if($user->num_rows > 0){
             $userArray = $user->fetch_array();
             $foundUser = new User();

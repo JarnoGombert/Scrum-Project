@@ -1,13 +1,4 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
 <?php
 include "header.php";
 include('OOP/serverOOP.php');
@@ -15,7 +6,12 @@ include('OOP/serverOOP.php');
 $firstName = '';
 $lastName = '';
 $email = '';
-$password = '';
+//$password = '';
+$phoneNr = '';
+$place = '';
+$pc = '';
+$street = '';
+$houseNr = '';
 
 if (isset($_GET['edit'])) {
     $id = $_GET['edit'];
@@ -26,10 +22,17 @@ if (isset($_GET['edit'])) {
     $firstName = $user->firstName;
     $lastName = $user->lastName;
     $email = $user->email;
-    $password = $user->password;
+//    $password = $user->password;
+
+    $phoneNr = $user->phoneNr;
+    $place = $user->place;
+    $pc = $user->pc;
+    $street = $user->street;
+    $houseNr = $user->houseNr;
 }
 ?>
 
+<body>
 <?php if (isset($_SESSION['message'])): ?>
     <div class="msg">
         <?php
@@ -68,16 +71,16 @@ $results = $db->query("SELECT * FROM klant");
                 <td><?php echo $row['Straat']; ?></td>
                 <td><?php echo $row['Huis_Nr']; ?></td>
                 <td>
-                    <a href="invoeg.php?edit=<?php echo $row['id']; ?>" class="edit_btn" >Edit</a>
+                    <a href="invoeg.php?edit=<?php echo $row['Klant_ID']; ?>" class="edit_btn" >Edit</a>
                 </td>
                 <td>
-                    <a href="serverOOP.php?del=<?php echo $row['id']; ?>" class="del_btn">Delete</a>
+                    <a href="/OOP/serverOOP.php?del=<?php echo $row['Klant_ID']; ?>" class="del_btn">Delete</a>
                 </td>
             </tr>
         <?php } ?>
     </table>
 
-    <form method="post" action="serverOOP.php">
+    <form method="post" action="/OOP/serverOOP.php">
         <input type="hidden" name="id" value="<?php echo $id; ?>">
         <div class="input-group">
             <label>Voornaam</label>
@@ -93,23 +96,23 @@ $results = $db->query("SELECT * FROM klant");
         </div>
         <div class="input-group">
             <label>Telefoon-Nummer</label>
-            <input type="text" name="password" value="<?php echo $password; ?>">
+            <input type="text" name="phoneNr" value="<?php echo $phoneNr; ?>">
         </div>
         <div class="input-group">
             <label>Plaats</label>
-            <input type="text" name="password" value="<?php echo $password; ?>">
+            <input type="text" name="place" value="<?php echo $place; ?>">
         </div>
         <div class="input-group">
             <label>Postcode</label>
-            <input type="text" name="password" value="<?php echo $password; ?>">
+            <input type="text" name="pc" value="<?php echo $pc; ?>">
         </div>
         <div class="input-group">
             <label>Straat</label>
-            <input type="text" name="password" value="<?php echo $password; ?>">
+            <input type="text" name="street" value="<?php echo $street; ?>">
         </div>
         <div class="input-group">
             <label>Huisnummer</label>
-            <input type="number" name="password" value="<?php echo $password; ?>">
+            <input type="number" name="houseNr" value="<?php echo $houseNr; ?>">
         </div>
         <div class="input-group">
             <?php if ($update == true): ?>
