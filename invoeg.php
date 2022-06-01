@@ -73,6 +73,9 @@ $results = $db->query("SELECT * FROM klant");
                 <td>
                     <a href="serverOOP.php?del=<?php echo $row['id']; ?>" class="del_btn">Delete</a>
                 </td>
+                <td>
+                    <a href="mailto:jarnogombert@gmail.com?subject=Klant informatie">Stuur klant informatie</a>
+                </td>
             </tr>
         <?php } ?>
     </table>
