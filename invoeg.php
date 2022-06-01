@@ -10,7 +10,34 @@
 <body>
 <?php
 include "header.php";
-include "db_functions.php";
+include('OOP/serverOOP.php');
+
+$firstName = '';
+$lastName = '';
+$email = '';
+$password = '';
+
+if (isset($_GET['edit'])) {
+    $id = $_GET['edit'];
+    $update = true;
+    $user = new User();
+    $user = $user->getUser($id);
+
+    $firstName = $user->firstName;
+    $lastName = $user->lastName;
+    $email = $user->email;
+    $password = $user->password;
+}
+?>
+
+<?php if (isset($_SESSION['message'])): ?>
+    <div class="msg">
+        <?php
+        echo $_SESSION['message'];
+        unset($_SESSION['message']);
+        ?>
+    </div>
+<?php endif;  
 $db = new mysqli('localhost', 'root', '', 'gertdatabase');
 $results = $db->query("SELECT * FROM klant");
 ?>
@@ -21,20 +48,30 @@ $results = $db->query("SELECT * FROM klant");
             <th>Voornaam</th>
             <th>Achternaam</th>
             <th>Email</th>
+            <th>Telefoon-nummer</th>
+            <th>Plaats</th>
+            <th>Postcode</th>
+            <th>Straat</th>
+            <th>Huisnummer</th>
             <th colspan="2">Action</th>
         </tr>
         </thead>
 
         <?php while ($row = $results->fetch_assoc()) { ?>
             <tr>
-                <td><?php echo $row['firstName']; ?></td>
-                <td><?php echo $row['lastName']; ?></td>
-                <td><?php echo $row['email']; ?></td>
+                <td><?php echo $row['VoorNaam']; ?></td>
+                <td><?php echo $row['AchterNaam']; ?></td>
+                <td><?php echo $row['Email']; ?></td>
+                <td><?php echo $row['Tel_Nr']; ?></td>
+                <td><?php echo $row['Plaats']; ?></td>
+                <td><?php echo $row['Postcode']; ?></td>
+                <td><?php echo $row['Straat']; ?></td>
+                <td><?php echo $row['Huis_Nr']; ?></td>
                 <td>
-                    <a href="/php/crud/oop/indexOOP.php?edit=<?php echo $row['id']; ?>" class="edit_btn" >Edit</a>
+                    <a href="invoeg.php?edit=<?php echo $row['id']; ?>" class="edit_btn" >Edit</a>
                 </td>
                 <td>
-                    <a href="/php/crud/oop/serverOOP.php?del=<?php echo $row['id']; ?>" class="del_btn">Delete</a>
+                    <a href="serverOOP.php?del=<?php echo $row['id']; ?>" class="del_btn">Delete</a>
                 </td>
             </tr>
         <?php } ?>
@@ -55,8 +92,24 @@ $results = $db->query("SELECT * FROM klant");
             <input type="email" name="email" value="<?php echo $email; ?>">
         </div>
         <div class="input-group">
-            <label>Wachtwoord</label>
-            <input type="password" name="password" value="<?php echo $password; ?>">
+            <label>Telefoon-Nummer</label>
+            <input type="text" name="password" value="<?php echo $password; ?>">
+        </div>
+        <div class="input-group">
+            <label>Plaats</label>
+            <input type="text" name="password" value="<?php echo $password; ?>">
+        </div>
+        <div class="input-group">
+            <label>Postcode</label>
+            <input type="text" name="password" value="<?php echo $password; ?>">
+        </div>
+        <div class="input-group">
+            <label>Straat</label>
+            <input type="text" name="password" value="<?php echo $password; ?>">
+        </div>
+        <div class="input-group">
+            <label>Huisnummer</label>
+            <input type="number" name="password" value="<?php echo $password; ?>">
         </div>
         <div class="input-group">
             <?php if ($update == true): ?>

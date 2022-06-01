@@ -9,20 +9,14 @@
     <title>Document</title>
 </head>
 <body>
+<?php
+include "db_functions.php";
+?>
 <header>
     <nav>
-        <h1><img src="Image/Gereedschap.png" alt="Logo"><a href="index.php"></a></h1>
-             <li>
+        <h1><a href="index.php"><img src="Image/Gereedschap.png" alt="Logo"></a></h1>
+             <a href="index.php">
                  Harry B.V.
-            </li>
-        <ul>
-            <div class="container">
-                <a href="index.php">Home</a>
-                <a href="index.php">Home</a>
-                <a href="index.php">Home</a>
-                <a href="index.php">Home</a>
-
-            </div>
-        </ul>
+            </a>
     </nav>
 </header>

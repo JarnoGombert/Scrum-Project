@@ -6,7 +6,7 @@
                 <div class="column column1">
                 <!-- gegevens voor contact -->
                     <h3>Contact</h3>
-                        <div style="width: 1000%;">
+                        <div style="width: 100%;">
                              <p>Adres: Walstraat 1, 7061 CA Terborg</p>
                             <p>Telefoon: 0315 632 042</p>
                             <p>Email: Harrybv@gmail.nl</p>

@@ -46,7 +46,7 @@ VALUES ('$this->firstName', '$this->lastName', '$this->pc', '$this->place', '$th
         return "Gebruiker is toegevoegd";
     }
 
-    //NIET KLAAR
+
     function update(){
 //        $this->db->query("UPDATE klant SET firstName='$this->firstName', lastName='$this->lastName', email='$this->email', password='$this->password' WHERE id=$this->id");
         $this->db->query("UPDATE `klant` SET `VoorNaam` = '$this->firstName', `AchterNaam` = '$this->lastName', `Postcode` = '$this->pc', `Plaats` = '$this->place', 
