@@ -45,7 +45,7 @@ function console_log($output, $with_script_tags = true) {
                     </tr>
                     <tr>
                         <td></td>
-                        <td><input name="login" type="submit" value="Login"></td>
+                        <td><input name="login" type="submit" value="Login" class="btn"></td>
                     </tr>
                 </table>
             </form>

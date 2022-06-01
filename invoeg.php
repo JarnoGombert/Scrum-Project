@@ -61,7 +61,7 @@ $results = $db->query("SELECT * FROM klant");
         </thead>
 
         <?php while ($row = $results->fetch_assoc()) { ?>
-            <tr>
+            <tr class="tabel">
                 <td><?php echo $row['VoorNaam']; ?></td>
                 <td><?php echo $row['AchterNaam']; ?></td>
                 <td><?php echo $row['Email']; ?></td>
@@ -75,6 +75,9 @@ $results = $db->query("SELECT * FROM klant");
                 </td>
                 <td>
                     <a href="/OOP/serverOOP.php?del=<?php echo $row['Klant_ID']; ?>" class="del_btn">Delete</a>
+                </td>
+                <td>
+                    <a href="mailto:jarnogombert@gmail.com?subject=Klant informatie">Stuur klant informatie</a>
                 </td>
             </tr>
         <?php } ?>
