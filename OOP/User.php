@@ -19,15 +19,10 @@ class User
     {
         $this->db = new mysqli('localhost', 'root', '', 'gertdatabase');
     }
-//    function db_getData($query)
-//    {
-//        $mysqli = $this->db;
-//        $result = $mysqli->query($query);
-//        $mysqli->close();
-//        return $result;
-//    }
+
     public function getUser($id){
-        $user = $this->db->query("SELECT * FROM users WHERE id = " . $id);
+        $this->id = $id;
+        $user = $this->db->query("SELECT * FROM klant WHERE Klant_ID = '$id'");
 
         if($user->num_rows > 0){
             $userArray = $user->fetch_array();
@@ -65,4 +60,6 @@ VALUES ('$this->firstName', '$this->lastName', '$this->pc', '$this->place', '$th
         $this->db->query("DELETE FROM klant WHERE Klant_ID='$this->id'");
         return "Gebruiker is verwijderd";
     }
+
+
 }

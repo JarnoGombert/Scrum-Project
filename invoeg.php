@@ -18,7 +18,7 @@ if (isset($_GET['edit'])) {
     $update = true;
     $user = new User();
     $user = $user->getUser($id);
-
+    console_log($id);
     $firstName = $user->firstName;
     $lastName = $user->lastName;
     $email = $user->email;
@@ -29,6 +29,15 @@ if (isset($_GET['edit'])) {
     $pc = $user->pc;
     $street = $user->street;
     $houseNr = $user->houseNr;
+}
+//scuffed php version of console.log
+function console_log($output, $with_script_tags = true) {
+    $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) .
+        ');';
+    if ($with_script_tags) {
+        $js_code = '<script>' . $js_code . '</script>';
+    }
+    echo $js_code;
 }
 ?>
 
