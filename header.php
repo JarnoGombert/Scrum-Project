@@ -15,17 +15,8 @@ include "db_functions.php";
 <header>
     <nav>
         <h1><img src="Image/Gereedschap.png" alt="Logo"><a href="index.php"></a></h1>
-             <li>
+             <li href="index.php">
                  Harry B.V.
             </li>
-        <ul>
-            <div class="container">
-                <a href="index.php">Home</a>
-                <a href="index.php">Home</a>
-                <a href="index.php">Home</a>
-                <a href="index.php">Home</a>
-
-            </div>
-        </ul>
     </nav>
 </header>
