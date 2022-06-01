@@ -14,9 +14,9 @@ include "db_functions.php";
 ?>
 <header>
     <nav>
-        <h1><img src="Image/Gereedschap.png" alt="Logo"><a href="index.php"></a></h1>
-             <li href="index.php">
+        <h1><a href="index.php"><img src="Image/Gereedschap.png" alt="Logo"></a></h1>
+             <a href="index.php">
                  Harry B.V.
-            </li>
+            </a>
     </nav>
 </header>
