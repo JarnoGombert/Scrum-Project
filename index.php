@@ -42,7 +42,7 @@ function console_log($output, $with_script_tags = true) {
                     </tr>
                     <tr>
                         <td><label for="">Wachtwoord</label></td>
-                        <td><input name="wachtwoord" class="input" id="Inputt" type="password" required> <input type="checkbox" name="Inputt" onclick="myFunction()"></td>
+                        <td style="display: flex; align-items: center;"><input name="wachtwoord" class="input" id="Inputt" type="password" required> <input type="checkbox" name="Inputt" onclick="myFunction()"></td>
                     </tr>
                     <tr>
                         <td></td>
