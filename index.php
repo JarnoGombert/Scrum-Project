@@ -1,7 +1,6 @@
 
 <?php
 include "header.php";
-include "db_functions.php";
 $user = null;
     if (isset($_POST['login']))
     {
