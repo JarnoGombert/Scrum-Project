@@ -67,11 +67,13 @@ footer{
     display: flex;
     height: 100%;
     align-content: center;
+
 }
 footer .footer_indeling{
     width: 50%;
     justify-content: space-evenly;
     display: flex;
+    margin: 0 auto;
 }
 /* footer .column{
     margin-right: 120px;

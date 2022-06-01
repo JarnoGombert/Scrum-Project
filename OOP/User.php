@@ -1,11 +1,18 @@
 <?php
+include '../database.php';
 class User
 {
     public $id;
     public $firstName;
     public $lastName;
+    public $pc;
+    public $place;
+    public $street;
+    public $houseNr;
+    public $phoneNr;
     public $email;
-    public $password;
+    public $password; //moet weg
+    public $notes;
     private $db;
 
     function __construct()
@@ -33,17 +40,22 @@ class User
 
 
     function save(){
-        $this->db->query("INSERT INTO users (firstName, lastName, email, password) VALUES ('$this->firstName', '$this->lastName', '$this->email', '$this->password')");
+//        $this->db->query("INSERT INTO klant (firstName, lastName, email, password) VALUES ('$this->firstName', '$this->lastName', '$this->email', '$this->password')");
+        $this->db->query("INSERT INTO `klant` (`VoorNaam`, `AchterNaam`, `Postcode`, `Plaats`, `Straat`, `Huis_Nr`, `Tel_Nr`, `Email`, `Notities`) 
+VALUES ('$this->firstName', '$this->lastName', '$this->pc', '$this->place', '$this->street', '$this->houseNr', '$this->phoneNr', '$this->email', '$this->notes')");
         return "Gebruiker is toegevoegd";
     }
 
+
     function update(){
-        $this->db->query("UPDATE users SET firstName='$this->firstName', lastName='$this->lastName', email='$this->email', password='$this->password' WHERE id=$this->id");
+//        $this->db->query("UPDATE klant SET firstName='$this->firstName', lastName='$this->lastName', email='$this->email', password='$this->password' WHERE id=$this->id");
+        $this->db->query("UPDATE `klant` SET `VoorNaam` = '$this->firstName', `AchterNaam` = '$this->lastName', `Postcode` = '$this->pc', `Plaats` = '$this->place', 
+                   `Straat` = '$this->street', `Huis_Nr` = '$this->houseNr', `Tel_Nr` = '$this->phoneNr', `Email` = '$this->email', `Notities` = '$this->notes' WHERE `klant`.`Klant_ID` = '$this->id'");
         return "Gebruiker is bijgewerkt";
     }
 
     function delete(){
-        $this->db->query("DELETE FROM users WHERE id=$this->id");
+        $this->db->query("DELETE FROM klant WHERE Klant_ID='$this->id'");
         return "Gebruiker is verwijderd";
     }
 }
