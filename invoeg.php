@@ -134,7 +134,7 @@ $results = $db->query("SELECT * FROM klant");
         </div>
         <div class="input-group">
             <?php if ($update == true): ?>
-                <button class="btn" type="submit" name="update" style="background: #556B2F;" >update</button>
+                <button class="btn2" type="submit" name="update">update</button>
             <?php else: ?>
                 <button class="btn" type="submit" name="save" >Save</button>
             <?php endif ?>
