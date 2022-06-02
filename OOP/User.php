@@ -28,11 +28,17 @@ class User
             $userArray = $user->fetch_array();
             $foundUser = new User();
 
-            $foundUser->id = $userArray['id'];
-            $foundUser->firstName = $userArray['firstName'];
-            $foundUser->lastName = $userArray['lastName'];
-            $foundUser->email = $userArray['email'];
-            $foundUser->password = $userArray['password'];
+            $foundUser->id = $userArray['Klant_ID'];
+            $foundUser->firstName = $userArray['VoorNaam'];
+            $foundUser->lastName = $userArray['AchterNaam'];
+            $foundUser->pc = $userArray['Postcode'];
+            $foundUser->place = $userArray['Plaats'];
+            $foundUser->street = $userArray['Straat'];
+            $foundUser->houseNr = $userArray['Huis_Nr'];
+            $foundUser->phoneNr = $userArray['Tel_Nr'];
+            $foundUser->email = $userArray['Email'];
+//            $foundUser->password = $userArray['password'];
+            $foundUser->notes = $userArray['Notities'];
 
             return $foundUser;
         }else{
