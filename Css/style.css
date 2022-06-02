@@ -62,6 +62,15 @@ hr{
     color: black;
 }
 
+.mail_link {
+    text-decoration: none;
+    color: black;
+}
+
+.mail_link:hover {
+    color: blue;
+}
+
 footer{
     background-color: rgb(104, 156, 156);
     display: flex;
