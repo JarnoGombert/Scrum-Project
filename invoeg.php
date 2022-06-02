@@ -94,7 +94,7 @@ $results = $db->query("SELECT * FROM klant");
         <?php } ?>
     </table>
 
-    <form method="post" action="/OOP/serverOOP.php">
+    <form method="post" action="./OOP/serverOOP.php">
         <input type="hidden" name="id" value="<?php echo $id; ?>">
         <div class="input-group">
             <label>Voornaam</label>
@@ -130,7 +130,7 @@ $results = $db->query("SELECT * FROM klant");
         </div>
         <div class="input-group">
             <label>Notities</label>
-            <textarea name="notes" id="" cols="87" rows="5"><?php echo $notes; ?></textarea>
+            <textarea name="notes"  cols="87" rows="5"><?php echo $notes; ?></textarea>
         </div>
         <div class="input-group">
             <?php if ($update == true): ?>
