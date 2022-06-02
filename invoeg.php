@@ -19,7 +19,7 @@ if (isset($_GET['edit'])) {
     $update = true;
     $user = new User();
     $user = $user->getUser($id);
-    console_log($id);
+    console_log(htmlspecialchars($user->notes));
     $firstName = $user->firstName;
     $lastName = $user->lastName;
     $email = $user->email;
@@ -85,7 +85,7 @@ $results = $db->query("SELECT * FROM klant");
                     <a href="invoeg.php?edit=<?php echo $row['Klant_ID']; ?>" class="edit_btn" >Edit</a>
                 </td>
                 <td>
-                    <a href="/OOP/serverOOP.php?del=<?php echo $row['Klant_ID']; ?>" class="del_btn">Delete</a>
+                    <a href="./OOP/serverOOP.php?del=<?php echo $row['Klant_ID']; ?>" class="del_btn">Delete</a>
                 </td>
                 <td>
                     <a href="mailto:jarnogombert@gmail.com?subject=Klant informatie">Stuur klant informatie</a>
@@ -130,7 +130,7 @@ $results = $db->query("SELECT * FROM klant");
         </div>
         <div class="input-group">
             <label>Notities</label>
-            <textarea name="notes"  cols="87" rows="5"><?php echo $notes; ?></textarea>
+            <textarea name="notes"  cols="87" rows="5"><?php echo htmlspecialchars($notes); ?></textarea>
         </div>
         <div class="input-group">
             <?php if ($update == true): ?>

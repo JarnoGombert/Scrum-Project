@@ -14,12 +14,6 @@ $update = false;
 if (isset($_POST['save'])) {
     $newCustomer = new User();
 
-//    $newCustomer->firstName = $_POST['firstName'];
-//    $newCustomer->lastName = $_POST['lastName'];
-//    $newCustomer->email = $_POST['email'];
-//    $newCustomer->password = $_POST['password'];
-
-//    $newCustomer->id = $userArray['Klant_ID'];
     $newCustomer->firstName = $_POST['firstName'];
     $newCustomer->lastName = $_POST['lastName'];
     $newCustomer->pc = $_POST['pc'];
@@ -28,8 +22,7 @@ if (isset($_POST['save'])) {
     $newCustomer->houseNr = $_POST['houseNr'];
     $newCustomer->phoneNr = $_POST['phoneNr'];
     $newCustomer->email = $_POST['email'];
-//            $foundUser->password = $userArray['password'];
-    $newCustomer->notes = $_POST['notes'];
+    $newCustomer->notes = htmlspecialchars($_POST['notes']);
 
     $_SESSION['message'] = $newCustomer->save();
 
@@ -41,10 +34,20 @@ if (isset($_POST['update'])) {
     $user = new User();
     $user = $user->getUser($id);
 
+//    $user->firstName = $_POST['firstName'];
+//    $user->lastName = $_POST['lastName'];
+//    $user->email = $_POST['email'];
+//    $user->password = $_POST['password'];
+
     $user->firstName = $_POST['firstName'];
     $user->lastName = $_POST['lastName'];
+    $user->pc = $_POST['pc'];
+    $user->place = $_POST['place'];
+    $user->street = $_POST['street'];
+    $user->houseNr = $_POST['houseNr'];
+    $user->phoneNr = $_POST['phoneNr'];
     $user->email = $_POST['email'];
-    $user->password = $_POST['password'];
+    $user->notes = htmlspecialchars($_POST['notes']);
 
     $_SESSION['message'] = $user->update();
     header('location: ../invoeg.php');

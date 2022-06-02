@@ -63,7 +63,7 @@ VALUES ('$this->firstName', '$this->lastName', '$this->pc', '$this->place', '$th
     }
 
     function delete(){
-        $this->db->query("DELETE FROM klant WHERE Klant_ID='$this->id'");
+        $this->db->query("DELETE FROM `klant` WHERE Klant_ID='$this->id'");
         return "Gebruiker is verwijderd";
     }
 
