@@ -88,7 +88,16 @@ $results = $db->query("SELECT * FROM klant");
                     <a href="./OOP/serverOOP.php?del=<?php echo $row['Klant_ID']; ?>" class="del_btn">Delete</a>
                 </td>
                 <td>
-                    <a href="mailto:jarnogombert@gmail.com?subject=Klant informatie">Stuur klant informatie</a>
+                    <a href="mailto:jarnogombert@gmail.com?subject=Klant informatie&body=
+                        <?php echo $row['VoorNaam']; ?>\n
+                        <?php echo $row['AchterNaam']; ?>\n
+                        <?php echo $row['Email']; ?>\n
+                        <?php echo $row['Tel_Nr']; ?>\n
+                        <?php echo $row['Plaats']; ?>\n
+                        <?php echo $row['Postcode']; ?>\n
+                        <?php echo $row['Straat']; ?>\n
+                        <?php echo $row['Huis_Nr']; ?>\n
+                    ">Stuur klant informatie</a>
                 </td>
             </tr>
         <?php } ?>
@@ -98,7 +107,7 @@ $results = $db->query("SELECT * FROM klant");
         <input type="hidden" name="id" value="<?php echo $id; ?>">
         <div class="input-group">
             <label>Voornaam</label>
-            <input type="text" name="firstName" value="<?php echo $firstName; ?>">
+            <input type="text" name="firstName" value="<?php echo $firstName; ?>" required>
         </div>
         <div class="input-group">
             <label>Achternaam</label>
@@ -106,7 +115,7 @@ $results = $db->query("SELECT * FROM klant");
         </div>
         <div class="input-group">
             <label>Email</label>
-            <input type="email" name="email" value="<?php echo $email; ?>">
+            <input type="email" name="email" value="<?php echo $email; ?>" required>
         </div>
         <div class="input-group">
             <label>Telefoon-Nummer</label>
@@ -114,19 +123,19 @@ $results = $db->query("SELECT * FROM klant");
         </div>
         <div class="input-group">
             <label>Plaats</label>
-            <input type="text" name="place" value="<?php echo $place; ?>">
+            <input type="text" name="place" value="<?php echo $place; ?>" required>
         </div>
         <div class="input-group">
             <label>Postcode</label>
-            <input type="text" name="pc" value="<?php echo $pc; ?>">
+            <input type="text" name="pc" value="<?php echo $pc; ?>" required>
         </div>
         <div class="input-group">
             <label>Straat</label>
-            <input type="text" name="street" value="<?php echo $street; ?>">
+            <input type="text" name="street" value="<?php echo $street; ?>" required>
         </div>
         <div class="input-group">
             <label>Huisnummer</label>
-            <input type="number" name="houseNr" value="<?php echo $houseNr; ?>">
+            <input type="number" name="houseNr" value="<?php echo $houseNr; ?>" required>
         </div>
         <div class="input-group">
             <label>Notities</label>
