@@ -88,7 +88,7 @@ $results = $db->query("SELECT * FROM klant");
                     <a href="./OOP/serverOOP.php?del=<?php echo $row['Klant_ID']; ?>" class="del_btn">Delete</a>
                 </td>
                 <td>
-                    <a href="mailto:jarnogombert@gmail.com?subject=Klant informatie&body=<?php echo $row['VoorNaam']. ""; ?> <?php echo $row['AchterNaam']. "%0D%0A";?> <?php echo $row['Email']. "%0D%0A";?><?php echo $row['Tel_Nr']. "%0D%0A";?> <?php echo $row['Plaats']. "";?> <?php echo $row['Postcode']. "%0D%0A";?> <?php echo $row['Straat']. "";?> <?php echo $row['Huis_Nr']. "%0D%0A";?>
+                    <a href="mailto:jarnogombert@gmail.com?subject=Klant informatie&body=<?php echo $row['VoorNaam']. ""; ?> <?php echo $row['AchterNaam']. "%0D%0A";?><?php echo $row['Email']. "%0D%0A";?><?php echo $row['Tel_Nr']. "%0D%0A";?><?php echo $row['Plaats']. "";?> <?php echo $row['Postcode']. "%0D%0A";?><?php echo $row['Straat']. "";?> <?php echo $row['Huis_Nr']. "%0D%0A";?>
 
                     ">Stuur klant informatie</a>
                 </td>
