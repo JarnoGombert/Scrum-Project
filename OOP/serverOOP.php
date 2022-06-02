@@ -29,7 +29,7 @@ if (isset($_POST['save'])) {
     $newCustomer->phoneNr = $_POST['phoneNr'];
     $newCustomer->email = $_POST['email'];
 //            $foundUser->password = $userArray['password'];
-    $newCustomer->notes = $userArray['Notities'];
+    $newCustomer->notes = $_POST['notes'];
 
     $_SESSION['message'] = $newCustomer->save();
 
