@@ -90,7 +90,7 @@ $results = $db->query("SELECT * FROM klant");
                     <a href="./OOP/serverOOP.php?del=<?php echo $row['Klant_ID']; ?>" class="del_btn">Delete</a>
                 </td>
                 <td>
-                    <a class="mail_link" href="mailto:jarnogombert@gmail.com?subject=Klant informatie&body=Klant Informatie %0D%0A%0D%0ANaam: <?php echo $row['VoorNaam']. ""; ?> <?php echo $row['AchterNaam']. "%0D%0A";?>E-mail: <?php echo $row['Email']. "%0D%0A";?>Tel: <?php echo $row['Tel_Nr']. "%0D%0A";?>Woonplaats: <?php echo $row['Plaats']. "";?> <?php echo $row['Postcode']. "%0D%0A";?>Ardes: <?php echo $row['Straat']. "";?> <?php echo $row['Huis_Nr']. "%0D%0A";?>Notities: <?php echo $row['Notities']. ".%0D%0A%0D%0A"; ?>">Stuur klant informatie</a>
+                    <a class="mail_link" href="mailto:jarnogombert@gmail.com?subject=Klant informatie&body=Harry B.V.%0D%0AKlant Informatie %0D%0A%0D%0ANaam: <?php echo $row['VoorNaam']. ""; ?> <?php echo $row['AchterNaam']. "%0D%0A";?>E-mail: <?php echo $row['Email']. "%0D%0A";?>Tel: <?php echo $row['Tel_Nr']. "%0D%0A";?>Woonplaats: <?php echo $row['Plaats']. "";?> <?php echo $row['Postcode']. "%0D%0A";?>Ardes: <?php echo $row['Straat']. "";?> <?php echo $row['Huis_Nr']. "%0D%0A";?>Notities: <?php echo $row['Notities']. ".%0D%0A%0D%0A"; ?>">Stuur klant informatie</a>
                 </td>
             </tr>
         <?php } ?>
