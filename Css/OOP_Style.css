@@ -13,7 +13,7 @@ table{
 th, td{
     border: none;
     height: 30px;
-    padding: 2px;
+    padding: 10px;
 }
 tr:hover {
     background: #F5F5F5;
