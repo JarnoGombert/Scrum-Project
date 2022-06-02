@@ -52,7 +52,7 @@ function console_log($output, $with_script_tags = true) {
         ?>
     </div>
 <?php endif;  
-$db = new mysqli('localhost', 'root', '', 'gertdatabase');
+$db = new mysqli('localhost', 'root', '', 'website');
 $results = $db->query("SELECT * FROM klant");
 ?>
 <div class="content">
