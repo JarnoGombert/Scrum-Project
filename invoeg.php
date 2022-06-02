@@ -130,7 +130,7 @@ $results = $db->query("SELECT * FROM klant");
         </div>
         <div class="input-group">
             <label>Notities</label>
-            <textarea name="notes" id="" cols="87" rows="5" value="<?php echo $notes; ?>"></textarea>
+            <textarea name="notes" id="" cols="87" rows="5"><?php echo $notes; ?></textarea>
         </div>
         <div class="input-group">
             <?php if ($update == true): ?>
