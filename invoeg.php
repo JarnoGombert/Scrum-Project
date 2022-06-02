@@ -12,6 +12,7 @@ $place = '';
 $pc = '';
 $street = '';
 $houseNr = '';
+$notes = '';
 
 if (isset($_GET['edit'])) {
     $id = $_GET['edit'];
@@ -29,6 +30,7 @@ if (isset($_GET['edit'])) {
     $pc = $user->pc;
     $street = $user->street;
     $houseNr = $user->houseNr;
+    $notes = $user->notes;
 }
 //scuffed php version of console.log
 function console_log($output, $with_script_tags = true) {
@@ -125,6 +127,10 @@ $results = $db->query("SELECT * FROM klant");
         <div class="input-group">
             <label>Huisnummer</label>
             <input type="number" name="houseNr" value="<?php echo $houseNr; ?>">
+        </div>
+        <div class="input-group">
+            <label>Notities</label>
+            <input type="text" name="notes" value="<?php echo $notes; ?>">
         </div>
         <div class="input-group">
             <?php if ($update == true): ?>

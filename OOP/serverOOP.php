@@ -14,10 +14,22 @@ $update = false;
 if (isset($_POST['save'])) {
     $newCustomer = new User();
 
+//    $newCustomer->firstName = $_POST['firstName'];
+//    $newCustomer->lastName = $_POST['lastName'];
+//    $newCustomer->email = $_POST['email'];
+//    $newCustomer->password = $_POST['password'];
+
+//    $newCustomer->id = $userArray['Klant_ID'];
     $newCustomer->firstName = $_POST['firstName'];
     $newCustomer->lastName = $_POST['lastName'];
+    $newCustomer->pc = $_POST['pc'];
+    $newCustomer->place = $_POST['place'];
+    $newCustomer->street = $_POST['street'];
+    $newCustomer->houseNr = $_POST['houseNr'];
+    $newCustomer->phoneNr = $_POST['phoneNr'];
     $newCustomer->email = $_POST['email'];
-    $newCustomer->password = $_POST['password'];
+//            $foundUser->password = $userArray['password'];
+    $newCustomer->notes = $userArray['Notities'];
 
     $_SESSION['message'] = $newCustomer->save();
 
