@@ -68,6 +68,7 @@ $results = $db->query("SELECT * FROM klant");
             <th>Straat</th>
             <th>Huisnummer</th>
             <th colspan="2">Action</th>
+            <th>Informatie sturen</th>
         </tr>
         </thead>
 

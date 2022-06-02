@@ -17,7 +17,7 @@ class User
 
     function __construct()
     {
-        $this->db = new mysqli('localhost', 'root', '', 'website');
+        $this->db = new mysqli('localhost', 'root', '', 'gertdatabase');
     }
 
     public function getUser($id){
