@@ -45,7 +45,7 @@ function console_log($output, $with_script_tags = true) {
             <h4>Inloggen</h4>
         </div>    
         <div class="inloggen">
-            <form action="#" method="POST">
+            <form action="#" method="POST" style="max-width: 500px;">
                 <table>
                     <tr>
                         <td><label for="">E-mail</label></td>
@@ -53,7 +53,7 @@ function console_log($output, $with_script_tags = true) {
                     </tr>
                     <tr>
                         <td><label for="">Wachtwoord</label></td>
-                        <td style="display: flex; align-items: center; margin-left: 20px;"><input name="wachtwoord" class="input" id="Inputt" type="password" required> <input type="checkbox" name="Inputt" onclick="myFunction()"></td>
+                        <td style="display: flex; align-items: center; margin-left: 60px;"><input name="wachtwoord" class="input" id="Inputt" type="password" required> <input type="checkbox" name="Inputt" onclick="myFunction()"></td>
                     </tr>
                     <tr>
                         <td></td>

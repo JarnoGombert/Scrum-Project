@@ -15,7 +15,7 @@ th, td{
     border: none;
     padding: 10px;
 }
-tr:nth-child(even) {background-color: #f2f2f2;}
+#info tr:nth-child(even) {background-color: #f2f2f2;}
 
 form {
     width: 45%;

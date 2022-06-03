@@ -69,7 +69,7 @@ $results = $db->query("SELECT * FROM klant");
 ?>
 <div class="content">
     <div style="overflow-x:auto;">
-        <table>
+        <table id="info">
             <thead>
             <tr>
                 <th>Voornaam</th>
