@@ -1,4 +1,16 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry B.V.</title>
+    <link rel="icon" href="image/Gereedschap.png">
+</head>
+<body>
+    
+</body>
+</html>
 <?php
 include "header.php";
 include('OOP/serverOOP.php');
@@ -56,45 +68,48 @@ $db = new mysqli('localhost', 'root', '', 'gertdatabase');
 $results = $db->query("SELECT * FROM klant");
 ?>
 <div class="content">
-    <table>
-        <thead>
-        <tr>
-            <th>Voornaam</th>
-            <th>Achternaam</th>
-            <th>Email</th>
-            <th>Telefoon-nummer</th>
-            <th>Plaats</th>
-            <th>Postcode</th>
-            <th>Straat</th>
-            <th>Huisnummer</th>
-            <th colspan="2">Action</th>
-            <th>Informatie sturen</th>
-        </tr>
-        </thead>
-
-        <?php while ($row = $results->fetch_assoc()) { ?>
-            <tr class="tabel">
-                <td><?php echo $row['VoorNaam']; ?></td>
-                <td><?php echo $row['AchterNaam']; ?></td>
-                <td><?php echo $row['Email']; ?></td>
-                <td><?php echo $row['Tel_Nr']; ?></td>
-                <td><?php echo $row['Plaats']; ?></td>
-                <td><?php echo $row['Postcode']; ?></td>
-                <td><?php echo $row['Straat']; ?></td>
-                <td><?php echo $row['Huis_Nr']; ?></td>
-                <td style="display: none;"><?php echo $row['Notities']; ?></td>
-                <td>
-                    <a href="invoeg.php?edit=<?php echo $row['Klant_ID']; ?>" class="edit_btn" >Edit</a>
-                </td>
-                <td>
-                    <a href="./OOP/serverOOP.php?del=<?php echo $row['Klant_ID']; ?>" class="del_btn">Delete</a>
-                </td>
-                <td>
-                    <a class="mail_link" href="mailto:jarnogombert@gmail.com?subject=Klant informatie&body=Harry B.V.%0D%0AKlant Informatie %0D%0A%0D%0ANaam: <?php echo $row['VoorNaam']. ""; ?> <?php echo $row['AchterNaam']. "%0D%0A";?>E-mail: <?php echo $row['Email']. "%0D%0A";?>Tel: <?php echo $row['Tel_Nr']. "%0D%0A";?>Woonplaats: <?php echo $row['Plaats']. "";?> <?php echo $row['Postcode']. "%0D%0A";?>Ardes: <?php echo $row['Straat']. "";?> <?php echo $row['Huis_Nr']. "%0D%0A";?>Notities: <?php echo $row['Notities']. ".%0D%0A%0D%0A"; ?>">Stuur klant informatie</a>
-                </td>
+    <div style="overflow-x:auto;">
+        <table>
+            <thead>
+            <tr>
+                <th>Voornaam</th>
+                <th>Achternaam</th>
+                <th>Email</th>
+                <th>Telefoon-nummer</th>
+                <th>Plaats</th>
+                <th>Postcode</th>
+                <th>Straat</th>
+                <th>Huisnummer</th>
+                <th colspan="2">Action</th>
+                <th>Informatie sturen</th>
             </tr>
-        <?php } ?>
-    </table>
+            </thead>
+
+            <?php while ($row = $results->fetch_assoc()) { ?>
+                <tr class="tabel">
+                    <td><?php echo $row['VoorNaam']; ?></td>
+                    <td><?php echo $row['AchterNaam']; ?></td>
+                    <td><?php echo $row['Email']; ?></td>
+                    <td><?php echo $row['Tel_Nr']; ?></td>
+                    <td><?php echo $row['Plaats']; ?></td>
+                    <td><?php echo $row['Postcode']; ?></td>
+                    <td><?php echo $row['Straat']; ?></td>
+                    <td><?php echo $row['Huis_Nr']; ?></td>
+                    <td style="display: none;"><?php echo $row['Notities']; ?></td>
+                    <td>
+                        <a href="invoeg.php?edit=<?php echo $row['Klant_ID']; ?>" class="edit_btn" >Edit</a>
+                    </td>
+                    <td>
+                        <a href="./OOP/serverOOP.php?del=<?php echo $row['Klant_ID']; ?>" class="del_btn">Delete</a>
+                    </td>
+                    <td>
+                        <a class="mail_link" href="mailto:jarnogombert@gmail.com?subject=Klant informatie&body=Harry B.V.%0D%0AKlant Informatie %0D%0A%0D%0ANaam: <?php echo $row['VoorNaam']. ""; ?> <?php echo $row['AchterNaam']. "%0D%0A";?>E-mail: <?php echo $row['Email']. "%0D%0A";?>Tel: <?php echo $row['Tel_Nr']. "%0D%0A";?>Woonplaats: <?php echo $row['Plaats']. "";?> <?php echo $row['Postcode']. "%0D%0A";?>Ardes: <?php echo $row['Straat']. "";?> <?php echo $row['Huis_Nr']. "%0D%0A";?>Notities: <?php echo $row['Notities']. ".%0D%0A%0D%0A"; ?>">Stuur klant informatie</a>
+                    </td>
+                </tr>
+            <?php } ?>
+        </table>
+    </div>
+    
 
     <form method="post" action="./OOP/serverOOP.php">
         <input type="hidden" name="id" value="<?php echo $id; ?>">

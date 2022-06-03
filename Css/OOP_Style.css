@@ -2,8 +2,9 @@ body {
     font-size: 19px;
 }
 table{
-    width: 50%;
-    margin: 30px auto;
+    width: 100%;
+    /* margin: 30px auto; */
+    border-spacing: 0;
     border-collapse: collapse;
     text-align: center;
 }
@@ -12,12 +13,9 @@ table{
 }
 th, td{
     border: none;
-    height: 30px;
     padding: 10px;
 }
-tr:hover {
-    background: #F5F5F5;
-}
+tr:nth-child(even) {background-color: #f2f2f2;}
 
 form {
     width: 45%;
