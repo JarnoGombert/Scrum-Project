@@ -1,4 +1,16 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry B.V.</title>
+    <link rel="icon" href="image/Gereedschap.png">
+</head>
+<body>
+    
+</body>
+</html>
 <?php
 include "header.php";
 $user = null;
@@ -33,7 +45,7 @@ function console_log($output, $with_script_tags = true) {
             <h4>Inloggen</h4>
         </div>    
         <div class="inloggen">
-            <form action="#" method="POST">
+            <form action="#" method="POST" style="max-width: 500px;">
                 <table>
                     <tr>
                         <td><label for="">E-mail</label></td>
@@ -41,7 +53,7 @@ function console_log($output, $with_script_tags = true) {
                     </tr>
                     <tr>
                         <td><label for="">Wachtwoord</label></td>
-                        <td style="display: flex; align-items: center;"><input name="wachtwoord" class="input" id="Inputt" type="password" required> <input type="checkbox" name="Inputt" onclick="myFunction()"></td>
+                        <td style="display: flex; align-items: center; margin-left: 60px;"><input name="wachtwoord" class="input" id="Inputt" type="password" required> <input type="checkbox" name="Inputt" onclick="myFunction()"></td>
                     </tr>
                     <tr>
                         <td></td>

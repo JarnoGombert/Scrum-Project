@@ -2,8 +2,9 @@ body {
     font-size: 19px;
 }
 table{
-    width: 50%;
-    margin: 30px auto;
+    width: 100%;
+    /* margin: 30px auto; */
+    border-spacing: 0;
     border-collapse: collapse;
     text-align: center;
 }
@@ -12,12 +13,9 @@ table{
 }
 th, td{
     border: none;
-    height: 30px;
     padding: 10px;
 }
-tr:hover {
-    background: #F5F5F5;
-}
+#info tr:nth-child(even) {background-color: #f2f2f2;}
 
 form {
     width: 45%;
@@ -52,6 +50,22 @@ box-shadow: 0 0 10pt 5pt #D3D3D3;
 outline-width: 0px;
 
 }
+input[type=email] {
+    text-indent: 5px;
+    font-size: 12.6pt;
+    border-radius: 5px;
+    border: solid 1.5px #D3D3D3;
+    -webkit-transition: 1s; /* Safari */
+    transition: 1s;
+  }
+input[type=email]:hover{
+    box-shadow: 0 0 10pt 1.5pt #D3D3D3;
+  }
+input[type=email]:focus {
+box-shadow: 0 0 10pt 5pt #D3D3D3;
+outline-width: 0px;
+}
+
 input[type=password] {
     text-indent: 5px;
     font-size: 12.6pt;
@@ -92,6 +106,21 @@ outline-width: 0px;
     background: #5F9EA0;
     border: none;
     border-radius: 5px;
+}
+.btn2 {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    border: solid black 1px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px black;
+    /*background-image: url("../Image/dikkewasbever.png");*/
+    background-image: linear-gradient(rgba(95, 158, 160,0.5), rgba(95, 158, 160,0.5)), url("../Image/dikkewasbever.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 .edit_btn {
     text-decoration: none;

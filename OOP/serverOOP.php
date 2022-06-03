@@ -34,10 +34,6 @@ if (isset($_POST['update'])) {
     $user = new User();
     $user = $user->getUser($id);
 
-//    $user->firstName = $_POST['firstName'];
-//    $user->lastName = $_POST['lastName'];
-//    $user->email = $_POST['email'];
-//    $user->password = $_POST['password'];
 
     $user->firstName = $_POST['firstName'];
     $user->lastName = $_POST['lastName'];
@@ -47,7 +43,7 @@ if (isset($_POST['update'])) {
     $user->houseNr = $_POST['houseNr'];
     $user->phoneNr = $_POST['phoneNr'];
     $user->email = $_POST['email'];
-    $user->notes = htmlspecialchars($_POST['notes']);
+    $user->notes = $_POST['notes'];
 
     $_SESSION['message'] = $user->update();
     header('location: ../invoeg.php');

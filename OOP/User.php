@@ -51,7 +51,7 @@ class User
 //        $this->db->query("INSERT INTO klant (firstName, lastName, email, password) VALUES ('$this->firstName', '$this->lastName', '$this->email', '$this->password')");
         $this->db->query("INSERT INTO `klant` (`VoorNaam`, `AchterNaam`, `Postcode`, `Plaats`, `Straat`, `Huis_Nr`, `Tel_Nr`, `Email`, `Notities`) 
 VALUES ('$this->firstName', '$this->lastName', '$this->pc', '$this->place', '$this->street', '$this->houseNr', '$this->phoneNr', '$this->email', '$this->notes')");
-        return "Gebruiker is toegevoegd";
+        return "Klant is toegevoegd";
     }
 
 
@@ -59,12 +59,12 @@ VALUES ('$this->firstName', '$this->lastName', '$this->pc', '$this->place', '$th
 //        $this->db->query("UPDATE klant SET firstName='$this->firstName', lastName='$this->lastName', email='$this->email', password='$this->password' WHERE id=$this->id");
         $this->db->query("UPDATE `klant` SET `VoorNaam` = '$this->firstName', `AchterNaam` = '$this->lastName', `Postcode` = '$this->pc', `Plaats` = '$this->place', 
                    `Straat` = '$this->street', `Huis_Nr` = '$this->houseNr', `Tel_Nr` = '$this->phoneNr', `Email` = '$this->email', `Notities` = '$this->notes' WHERE `klant`.`Klant_ID` = '$this->id'");
-        return "Gebruiker is bijgewerkt";
+        return "Klant is bijgewerkt";
     }
 
     function delete(){
         $this->db->query("DELETE FROM `klant` WHERE Klant_ID='$this->id'");
-        return "Gebruiker is verwijderd";
+        return "Klant is verwijderd";
     }
 
 
