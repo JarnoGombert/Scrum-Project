@@ -8,9 +8,6 @@
     <link rel="icon" href="image/Gereedschap.png">
 </head>
 <body>
-    
-</body>
-</html>
 <?php
 include "header.php";
 $user = null;
