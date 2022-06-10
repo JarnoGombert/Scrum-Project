@@ -22,6 +22,7 @@ $street = '';
 $houseNr = '';
 $notes = '';
 $werkzaamheid = '';
+
 if (isset($_GET['edit'])) {
     $id = $_GET['edit'];
     $update = true;
@@ -39,6 +40,7 @@ if (isset($_GET['edit'])) {
     $street = $user->street;
     $houseNr = $user->houseNr;
     $notes = $user->notes;
+    $werkzaamheid = $user->werkzaamheid;
 }
 //scuffed php version of console.log
 function console_log($output, $with_script_tags = true) {
@@ -147,7 +149,7 @@ $results = $db->query("SELECT * FROM klant");
         </div>
         <div class="input-group">
         <label>Werkzaamheden</label>
-        <select id="werkzaamheden" name="activities" form="werkzaamheden">
+        <select id="werkzaamheden" name="activities">
             <option value="<?php echo $werkzaamheid; ?>"><?php echo $werkzaamheid; ?></option>
             <option value="repareren">repareren</option>
             <option value="onderhoud">onderhoud</option>
