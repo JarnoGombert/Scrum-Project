@@ -146,14 +146,14 @@ $results = $db->query("SELECT * FROM klant");
             <input type="number" name="houseNr" value="<?php echo $houseNr; ?>" required>
         </div>
         <div class="input-group">
-        <label>Werkzaamheden</label>
-        <select id="werkzaamheden" name="activities" form="werkzaamheden">
-            <option value="<?php echo $werkzaamheid; ?>"><?php echo $werkzaamheid; ?></option>
-            <option value="repareren">repareren</option>
-            <option value="onderhoud">onderhoud</option>
-            <option value="vervangen ">vervangen </option>
-            <option value="plaatsen">plaatsen</option>
-        </select>
+            <label>Werkzaamheden</label>
+            <select id="werkzaamheden" name="activities">
+                <option value="<?php echo $werkzaamheid; ?>"><?php echo $werkzaamheid; ?></option>
+                <option value="repareren">repareren</option>
+                <option value="onderhoud">onderhoud</option>
+                <option value="vervangen ">vervangen </option>
+                <option value="plaatsen">plaatsen</option>
+            </select>
         </div>
         <div class="input-group">
             <label>Notities</label>
