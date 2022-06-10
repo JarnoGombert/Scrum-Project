@@ -21,7 +21,7 @@ $pc = '';
 $street = '';
 $houseNr = '';
 $notes = '';
-
+$werkzaamheid = '';
 if (isset($_GET['edit'])) {
     $id = $_GET['edit'];
     $update = true;
@@ -140,6 +140,17 @@ $results = $db->query("SELECT * FROM klant");
         <div class="input-group">
             <label>Huisnummer</label>
             <input type="number" name="houseNr" value="<?php echo $houseNr; ?>" required>
+        </div>
+        <div class="input-group">
+        <label>Werkzaamheden</label>
+
+        <select id="werkzaamheden" name="activities" form="werkzaamheden">
+        <option value="<?php echo $werkzaamheid; ?>"><?php echo $werkzaamheid; ?></option>
+        <option value="repareren">repareren</option>
+        <option value="onderhoud">onderhoud</option>
+        <option value="vervangen ">vervangen </option>
+        <option value="plaatsen">plaatsen</option>
+        </select>
         </div>
         <div class="input-group">
             <label>Notities</label>
