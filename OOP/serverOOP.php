@@ -23,6 +23,7 @@ if (isset($_POST['save'])) {
     $newCustomer->phoneNr = $_POST['phoneNr'];
     $newCustomer->email = $_POST['email'];
     $newCustomer->notes = htmlspecialchars($_POST['notes']);
+    $newCustomer->werkzaamheid = $_POST['activities'];
 
     $_SESSION['message'] = $newCustomer->save();
 
@@ -44,6 +45,7 @@ if (isset($_POST['update'])) {
     $user->phoneNr = $_POST['phoneNr'];
     $user->email = $_POST['email'];
     $user->notes = $_POST['notes'];
+    $user->werkzaamheid = $_POST['activities'];
 
     $_SESSION['message'] = $user->update();
     header('location: ../invoeg.php');

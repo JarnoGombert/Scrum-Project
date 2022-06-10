@@ -14,6 +14,7 @@ class User
     public $password; //moet weg
     public $notes;
     private $db;
+    public $werkzaamheid;
 
     function __construct()
     {
@@ -39,7 +40,7 @@ class User
             $foundUser->email = $userArray['Email'];
 //            $foundUser->password = $userArray['password'];
             $foundUser->notes = $userArray['Notities'];
-
+            $foundUser->werkzaamheid = $userArray['Werkzaamheid'];
             return $foundUser;
         }else{
             return "No User found";
@@ -49,8 +50,8 @@ class User
 
     function save(){
 //        $this->db->query("INSERT INTO klant (firstName, lastName, email, password) VALUES ('$this->firstName', '$this->lastName', '$this->email', '$this->password')");
-        $this->db->query("INSERT INTO `klant` (`VoorNaam`, `AchterNaam`, `Postcode`, `Plaats`, `Straat`, `Huis_Nr`, `Tel_Nr`, `Email`, `Notities`) 
-VALUES ('$this->firstName', '$this->lastName', '$this->pc', '$this->place', '$this->street', '$this->houseNr', '$this->phoneNr', '$this->email', '$this->notes')");
+        $this->db->query("INSERT INTO `klant` (`VoorNaam`, `AchterNaam`, `Postcode`, `Plaats`, `Straat`, `Huis_Nr`, `Tel_Nr`, `Email`, `Notities`, `Werkzaamheid`) 
+VALUES ('$this->firstName', '$this->lastName', '$this->pc', '$this->place', '$this->street', '$this->houseNr', '$this->phoneNr', '$this->email', '$this->notes','$this->werkzaamheid')");
         return "Klant is toegevoegd";
     }
 
@@ -58,7 +59,7 @@ VALUES ('$this->firstName', '$this->lastName', '$this->pc', '$this->place', '$th
     function update(){
 //        $this->db->query("UPDATE klant SET firstName='$this->firstName', lastName='$this->lastName', email='$this->email', password='$this->password' WHERE id=$this->id");
         $this->db->query("UPDATE `klant` SET `VoorNaam` = '$this->firstName', `AchterNaam` = '$this->lastName', `Postcode` = '$this->pc', `Plaats` = '$this->place', 
-                   `Straat` = '$this->street', `Huis_Nr` = '$this->houseNr', `Tel_Nr` = '$this->phoneNr', `Email` = '$this->email', `Notities` = '$this->notes' WHERE `klant`.`Klant_ID` = '$this->id'");
+                   `Straat` = '$this->street', `Huis_Nr` = '$this->houseNr', `Tel_Nr` = '$this->phoneNr', `Email` = '$this->email', `Notities` = '$this->notes', `Werkzaamheid` = '$this->werkzaamheid' WHERE `klant`.`Klant_ID` = '$this->id'");
         return "Klant is bijgewerkt";
     }
 
