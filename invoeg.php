@@ -95,10 +95,10 @@ $results = $db->query("SELECT * FROM klant");
                     <td><?php echo $row['Huis_Nr']; ?></td>
                     <td style="display: none;"><?php echo $row['Notities']; ?></td>
                     <td>
-                        <a href="invoeg.php?edit=<?php echo $row['Klant_ID']; ?>" class="edit_btn" >Edit</a>
+                        <a href="invoeg.php?edit=<?php echo $row['Klant_ID']; ?>" class="edit_btn" >Bewerk</a>
                     </td>
                     <td>
-                        <a href="./OOP/serverOOP.php?del=<?php echo $row['Klant_ID']; ?>" class="del_btn">Delete</a>
+                        <a href="./OOP/serverOOP.php?del=<?php echo $row['Klant_ID']; ?>" class="del_btn">Verwijder</a>
                     </td>
                     <td>
                         <?php

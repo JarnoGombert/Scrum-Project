@@ -63,10 +63,12 @@ hr{
 .mail_link {
     text-decoration: none;
     color: black;
+    font-size: 15px;
 }
 
 .mail_link:hover {
     color: blue;
+    font-size: 18px;
 }
 
 footer{
