@@ -155,7 +155,7 @@ $results = $db->query("SELECT * FROM klant");
         </div>
         <div class="input-group">
             <label>Notities</label>
-            <textarea name="notes" class="comment"><?php echo $notes; ?></textarea>
+            <textarea name="notes" class="comment"><?php echo $werkzaamheid; ?> <?php echo $notes; ?></textarea>
         </div>
         <div class="input-group">
             <?php if ($update == true): ?>
